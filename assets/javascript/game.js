@@ -119,7 +119,7 @@ $(document).ready(function(){
 			    $("#winBox").html(win);
 			    reset();
 			} 
-			else if (playerNum > targetInt) {
+			else if (playerNum > targetNum) {
 				alert("You lose! Press 'ok' to play again.");
 				loss++
 				$("#lossBox").html(loss);
@@ -137,7 +137,7 @@ $(document).ready(function(){
 		function keepPlaying() {
 			var playerNum = parseInt(totalScore);
 			var targetNum = parseInt(random);
-			if (playerNum === targetInt) {
+			if (playerNum === targetNum) {
 			    alert("You win! Press 'ok' to play again.");
 			    win++
 			    $("#winBox").html(win);
@@ -155,12 +155,9 @@ $(document).ready(function(){
   
     // when the Green Crystal is clicked the function addtoScorePurple is executed and the value is added to total score. Same applies to the other crystals.    	
    	$("#green").on("click", function() {
-        
         addToScoreGreen();
 		$("#totalBox").html(totalScore);
-
 		function keepPlaying() {
-				 
 			var playerNum = parseInt(totalScore);
 			var targetNum = parseInt(random);
 			if (playerNum === targetNum) {
