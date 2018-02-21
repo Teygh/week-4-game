@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="UTF-8">
+      <title>Crystals Collector Game</title>
+      
+      <!-- link to Reset CSS File -->
+      <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+      
+      <!-- Link to Bootstrap -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+      
+      <!-- Link to CSS File -->
+      <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+      <link href="https://fonts.googleapis.com/css?family=Alice|Rock+Salt|Vollkorn+SC" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Alice|Rock+Salt" rel="stylesheet">
+
+      
+      <!-- link to Jquery Library -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"         crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+      
+      <!-- Link to the javascript file -->
+     <script type="text/javascript" src="./assets/javascript/game.js"></script>
+     
+</head>
+
+
+
+
+<body >
+
+
+<div class="wrapper">
+
+	<header>
+		<div class = "container-fluid">
+
+			 <h1 id="header">Crystals Collector Game !!!</h1>
+		
+		</div>
+
+    </header>
+    <br>
+    <br>
+
+	<div class = "container">
+
+		<div class = "row">
+            <!-- The Score Section -->
+			<div class = "col-md-2">
+                <!-- The Wins Score Section -->
+	            <div class = "row">
+                    <div class = "col-md-12" align="left">
+                        <div class ="BoxIndex2" id="boxWins">
+                            <p > Wins: <span id=winBox> </span></p>
+                        </div>
+                    </div>
+                </div>
+                    
+                <br>
+                <!-- The Losses Score Section -->
+				<div class = "row">
+                    <div class = "col-md-12" align="left">
+						<div class ="BoxIndex2" id="boxLosses">
+                            <p > Losses: <span id=lossBox> </span></p>	
+                        </div>
+					</div>
+				</div>
+
+			</div>
+
+            <!-- The section with the Target Score and the User Score -->
+			<div class = "col-md-4" align="center">
+                    <!-- The Target Score Section -->
+                    <div class = "row">
+						<div class = "col-md-4" align="center">
+                            <div class ="BoxIndex3" id="boxRandom">   
+                            </div>
+                            
+						</div>
+                    </div>	
+                    
+                    <br>
+                    <!-- The User Score Section -->
+					<div class = "row">
+						<div class = "col-md-4" align="center">
+    						<div class ="BoxIndex3" id="boxTotal">
+								<p> Total Score: <span id="totalBox"> </span></p>
+							</div>
+						</div>
+					</div>
+			</div>
+
+            <!-- The Game Instructions Section -->
+			<div class = "col-md-5">
+				<div class = "BoxIndex">
+					<p>Welcome! </p>
+					<br />
+					<p>You will be given a random number at the start of the game.</p>
+					<p> Click on the crystals below to add points to your total.</p>
+					<p> Win the game by matching your total to the random number. If you go over, you will lose.</p>
+					<p> You will not know the value of each crystal until you click on it. When the game restarts, the crystal values will change too.</p>
+				</div>
+			</div>
+
+        </div>
+        
+        <br>
+        <br>
+
+       <!--  The Bottom Section Holding the Crystals-->
+        <div class = "BoxIndex4" id="gemBox" align="center">
+            <div class = "row">
+                <div class = "col-md-3">
+                    <h3><button  id="red"><img id="red1" class= "crystalImage" src= "./assets/images/red.jpg" alt="Photo of red gem" /> </button></h3>
+                </div>
+
+                <div class = "col-md-3">
+                    <h3><button id="purple"><img id="purple1" class= "crystalImage" src= "./assets/images/purple.jpg" alt="Photo of purple gem" /></button></h3>
+                </div>
+
+                <div class = "col-md-3">
+                    <h3><button id="white"><img id="white1" class= "crystalImage" src= "./assets/images/white.jpg" alt="Photo of white gem" /> </button></h3>
+                </div>
+
+                <div class = "col-md-3">
+                    <h3><button id="green"><img id="green1" class= "crystalImage" src= "./assets/images/green.jpg" alt="Photo of green gem"  /> </button></h3>
+                </div>
+                
+            </div>
+        </div>
+	</div>	
+</div>
+
+    <br>
+    <br>
+
+    <div class="push"></div>
+
+	   <!-- Footer Section -->
+        <footer class="footer">
+        <p>&copy;Copyright 2018 Abdolbaghi Teygh Khorshid</p>
+        </footer>
+
+
+</body>
+
+</html>
